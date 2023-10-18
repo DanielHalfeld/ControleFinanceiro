@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\ControleFinanceiro\\ControleFinanceiro.csproj": {}
+    "C:\\Users\\2022101754\\Source\\Repos\\DanielHalfeld\\ControleFinanceiro\\ControleFinanceiro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\ControleFinanceiro\\ControleFinanceiro.csproj": {
+    "C:\\Users\\2022101754\\Source\\Repos\\DanielHalfeld\\ControleFinanceiro\\ControleFinanceiro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\ControleFinanceiro\\ControleFinanceiro.csproj",
+        "projectUniqueName": "C:\\Users\\2022101754\\Source\\Repos\\DanielHalfeld\\ControleFinanceiro\\ControleFinanceiro.csproj",
         "projectName": "ControleFinanceiro",
-        "projectPath": "C:\\Users\\user\\source\\repos\\ControleFinanceiro\\ControleFinanceiro.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\ControleFinanceiro\\obj\\",
+        "projectPath": "C:\\Users\\2022101754\\Source\\Repos\\DanielHalfeld\\ControleFinanceiro\\ControleFinanceiro.csproj",
+        "packagesPath": "C:\\Users\\2022101754\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2022101754\\Source\\Repos\\DanielHalfeld\\ControleFinanceiro\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2022101754\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +45,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
