@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ControleFinanceiro.Models.Departamento>
+
+@{
+    ViewData["Title"] = "Lista de Departamentos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create">Criar novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartamentoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartamentoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.DepartamentoId }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.DepartamentoId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.DepartamentoId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
