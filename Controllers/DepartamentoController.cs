@@ -51,5 +51,24 @@ namespace ControleFinanceiro.Controllers
             departamentos.Add(departamento);
             return RedirectToAction("Index");
         }
+
+        public IActionResult Details(long id)
+        {
+            return View(departamentos.Where(i => i.DepartamentoId == id).First());
+        }
+
+        public IActionResult Delete(long id)
+        {
+            return View(departamentos.Where(i => i.DepartamentoId == id).First());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public ActionResult Delete(Departamento departamento)
+        {
+            departamentos.Remove(departamentos.Where(i => i.DepartamentoId == departamento.DepartamentoId).First());
+            return RedirectToAction("Index");
+        }
     }
 }
