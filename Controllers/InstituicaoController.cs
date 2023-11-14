@@ -88,6 +88,12 @@ namespace ControleFinanceiro.Controllers
                 }
             return View(instituicao);
         }
+
+        private bool InstituicaoExists(long? instituicaoId)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IActionResult> Details(long? id)
         {
             if (id == null)

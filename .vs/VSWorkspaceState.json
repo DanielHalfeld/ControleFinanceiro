@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Migrations"
   ],
+  "SelectedNode": "\\Migrations\\20231107233407_inicial.cs",
   "PreviewInSolutionExplorer": false
 }
