@@ -91,7 +91,10 @@ namespace ControleFinanceiro.Controllers
 
         private bool InstituicaoExists(long? instituicaoId)
         {
-            throw new NotImplementedException();
+            var instituicao = _context.Instituicos.FirstOrDefault(i => i.InsituicaoId == instituicaoId);
+            if (instituicao == null)
+                return false;
+            return true;
         }
 
         public async Task<IActionResult> Details(long? id)
